@@ -1,47 +1,111 @@
-@media (max-width: 599px) {
+@media (max-width: 474px) {
   h1 {
     font-size: 20px;
   }
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 475px) and (max-width: 1400px) {
   h1 {
-    font-size: calc(20px + (100vw - 600px) / 600 * 20);
+    font-size: calc(20px + (100vw - 475px) / 925 * 20);
   }
 }
-@media (min-width: 1201px) {
+@media (min-width: 1401px) {
   h1 {
     font-size: 40px;
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 474px) {
   h2 {
     font-size: 18px;
   }
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 475px) and (max-width: 1400px) {
   h2 {
-    font-size: calc(18px + (100vw - 600px) / 600 * 17);
+    font-size: calc(18px + (100vw - 475px) / 925 * 17);
   }
 }
-@media (min-width: 1201px) {
+@media (min-width: 1401px) {
   h2 {
     font-size: 35px;
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 474px) {
   h3 {
     font-size: 15px;
   }
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 475px) and (max-width: 1400px) {
   h3 {
-    font-size: calc(15px + (100vw - 600px) / 600 * 15);
+    font-size: calc(15px + (100vw - 475px) / 925 * 15);
   }
 }
-@media (min-width: 1201px) {
+@media (min-width: 1401px) {
   h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 474px) {
+  h4 {
+    font-size: 15px;
+  }
+}
+@media (min-width: 475px) and (max-width: 1400px) {
+  h4 {
+    font-size: calc(15px + (100vw - 475px) / 925 * 15);
+  }
+}
+@media (min-width: 1401px) {
+  h4 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 474px) {
+  h5 {
+    font-size: 15px;
+  }
+}
+@media (min-width: 475px) and (max-width: 1400px) {
+  h5 {
+    font-size: calc(15px + (100vw - 475px) / 925 * 15);
+  }
+}
+@media (min-width: 1401px) {
+  h5 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 474px) {
+  h6 {
+    font-size: 15px;
+  }
+}
+@media (min-width: 475px) and (max-width: 1400px) {
+  h6 {
+    font-size: calc(15px + (100vw - 475px) / 925 * 15);
+  }
+}
+@media (min-width: 1401px) {
+  h6 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 474px) {
+  p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 475px) and (max-width: 1400px) {
+  p {
+    font-size: calc(15px + (100vw - 475px) / 925 * 15);
+  }
+}
+@media (min-width: 1401px) {
+  p {
     font-size: 30px;
   }
 }/*# sourceMappingURL=responsive-fontsize.css.map */

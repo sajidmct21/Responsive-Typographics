@@ -1,5 +1,12 @@
+// Web Link for more information
+// https://medium.com/@jamesweee/minimum-maximum-responsive-font-sizing-in-css-38793acc9f8f
+
+
+
 $mobile: 475px; // Screen min
+$maxWidth:474px;
 $desktop: 1400px; // Screen max
+$minWidth:1401px;
 
 // Responsive Typeographics
 
@@ -10,18 +17,18 @@ $screen-diff: ($desktop / 1px - $mobile / 1px);
 $font-diff: ($font-max / 1px - $font-min / 1px);
 h1 {
   // Mobile
-  @media (max-width: 599px) {
+  @media (max-width: $maxWidth) {
     font-size: $font-min;
   }
 
   // Everything in between mobile (600px) to desktop (1200px)
-  @media (min-width: 600px) and (max-width: 1200px) {
+  @media (min-width: $mobile) and (max-width: $desktop) {
     font-size: calc(
       #{$font-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$font-diff}
     );
   }
   // Desktop
-  @media (min-width: 1201px) {
+  @media (min-width: $minWidth) {
     font-size: $font-max;
   }
 }
@@ -33,18 +40,18 @@ $h2font-diff: ($h2font-max / 1px - $h2font-min / 1px);
 
 h2 {
   // Mobile
-  @media (max-width: 599px) {
+  @media (max-width: $maxWidth) {
     font-size: $h2font-min;
   }
 
   // Everything in between mobile (600px) to desktop (1200px)
-  @media (min-width: 600px) and (max-width: 1200px) {
+  @media (min-width: $mobile) and (max-width: $desktop) {
     font-size: calc(
       #{$h2font-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$h2font-diff}
     );
   }
   // Desktop
-  @media (min-width: 1201px) {
+  @media (min-width: $minWidth) {
     font-size: $h2font-max;
   }
 }
@@ -56,18 +63,18 @@ $h3font-diff: ($h3font-max / 1px - $h3font-min / 1px);
 
 h3 {
   // Mobile
-  @media (max-width: 599px) {
+  @media (max-width: $maxWidth) {
     font-size: $h3font-min;
   }
 
   // Everything in between mobile (600px) to desktop (1200px)
-  @media (min-width: 600px) and (max-width: 1200px) {
+  @media (min-width: $mobile) and (max-width: $desktop) {
     font-size: calc(
       #{$h3font-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$h3font-diff}
     );
   }
   // Desktop
-  @media (min-width: 1201px) {
+  @media (min-width: $minWidth) {
     font-size: $h3font-max;
   }
 }
@@ -78,18 +85,18 @@ $h4font-max: 30px;
 $h4font-diff: ($h4font-max / 1px - $h4font-min / 1px);
 h4 {
   // Mobile
-  @media (max-width: 599px) {
+  @media (max-width: $maxWidth) {
     font-size: $h4font-min;
   }
 
   // Everything in between mobile (600px) to desktop (1200px)
-  @media (min-width: 600px) and (max-width: 1200px) {
+  @media (min-width: $mobile) and (max-width: $desktop) {
     font-size: calc(
       #{$h4font-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$h4font-diff}
     );
   }
   // Desktop
-  @media (min-width: 1201px) {
+  @media (min-width: $minWidth) {
     font-size: $h4font-max;
   }
 }
@@ -100,18 +107,18 @@ $h5font-max: 30px;
 $h5font-diff: ($h5font-max / 1px - $h5font-min / 1px);
 h5 {
   // Mobile
-  @media (max-width: 599px) {
+  @media (max-width: $maxWidth) {
     font-size: $h5font-min;
   }
 
   // Everything in between mobile (600px) to desktop (1200px)
-  @media (min-width: 600px) and (max-width: 1200px) {
+  @media (min-width: $mobile) and (max-width: $desktop) {
     font-size: calc(
       #{$h5font-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$h5font-diff}
     );
   }
   // Desktop
-  @media (min-width: 1201px) {
+  @media (min-width: $minWidth) {
     font-size: $h5font-max;
   }
 }
@@ -122,18 +129,18 @@ $h6font-max: 30px;
 $h6font-diff: ($h6font-max / 1px - $h6font-min / 1px);
 h6 {
   // Mobile
-  @media (max-width: 599px) {
+  @media (max-width: $maxWidth) {
     font-size: $h6font-min;
   }
 
   // Everything in between mobile (600px) to desktop (1200px)
-  @media (min-width: 600px) and (max-width: 1200px) {
+  @media (min-width: $mobile) and (max-width: $desktop) {
     font-size: calc(
       #{$h6font-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$h6font-diff}
     );
   }
   // Desktop
-  @media (min-width: 1201px) {
+  @media (min-width: $minWidth) {
     font-size: $h6font-max;
   }
 }
@@ -144,18 +151,18 @@ $pfont-max: 30px;
 $pfont-diff: ($pfont-max / 1px - $pfont-min / 1px);
 p {
   // Mobile
-  @media (max-width: 599px) {
+  @media (max-width: $maxWidth) {
     font-size: $pfont-min;
   }
 
   // Everything in between mobile (600px) to desktop (1200px)
-  @media (min-width: 600px) and (max-width: 1200px) {
+  @media (min-width: $mobile) and (max-width: $desktop) {
     font-size: calc(
       #{$pfont-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$pfont-diff}
     );
   }
   // Desktop
-  @media (min-width: 1201px) {
+  @media (min-width: $minWidth) {
     font-size: $pfont-max;
   }
 }
