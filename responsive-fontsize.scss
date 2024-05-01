@@ -1,5 +1,5 @@
-$mobile: 600px; // Screen min
-$desktop: 1200px; // Screen max
+$mobile: 475px; // Screen min
+$desktop: 1400px; // Screen max
 
 // Responsive Typeographics 
 $font-min: 20px; 
@@ -61,3 +61,87 @@ h3 {
       font-size: $h3font-max;
     }
   }
+
+
+  $h4font-min: 15px; 
+$h4font-max: 30px;
+$h4font-diff: ($h4font-max / 1px - $h4font-min / 1px);
+  h4 {
+    // Mobile
+    @media (max-width: 599px) {
+      font-size: $h4font-min;
+    }
+    
+    // Everything in between mobile (600px) to desktop (1200px)
+    @media (min-width: 600px) and (max-width: 1200px) {
+      font-size: calc(#{$h4font-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$h4font-diff});
+    }
+  // Desktop
+    @media (min-width: 1201px) {
+      font-size: $h4font-max;
+    }
+  }
+
+
+  $h5font-min: 15px; 
+$h5font-max: 30px;
+$h5font-diff: ($h5font-max / 1px - $h5font-min / 1px);
+  h5 {
+    // Mobile
+    @media (max-width: 599px) {
+      font-size: $h5font-min;
+    }
+    
+    // Everything in between mobile (600px) to desktop (1200px)
+    @media (min-width: 600px) and (max-width: 1200px) {
+      font-size: calc(#{$h5font-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$h5font-diff});
+    }
+  // Desktop
+    @media (min-width: 1201px) {
+      font-size: $h5font-max;
+    }
+  }
+
+
+  $h6font-min: 15px; 
+$h6font-max: 30px;
+$h6font-diff: ($h6font-max / 1px - $h6font-min / 1px);
+  h6 {
+    // Mobile
+    @media (max-width: 599px) {
+      font-size: $h6font-min;
+    }
+    
+    // Everything in between mobile (600px) to desktop (1200px)
+    @media (min-width: 600px) and (max-width: 1200px) {
+      font-size: calc(#{$h6font-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$h6font-diff});
+    }
+  // Desktop
+    @media (min-width: 1201px) {
+      font-size: $h6font-max;
+    }
+  }
+
+
+
+  $pfont-min: 15px; 
+$pfont-max: 30px;
+$pfont-diff: ($pfont-max / 1px - $pfont-min / 1px);
+  p {
+    // Mobile
+    @media (max-width: 599px) {
+      font-size: $pfont-min;
+    }
+    
+    // Everything in between mobile (600px) to desktop (1200px)
+    @media (min-width: 600px) and (max-width: 1200px) {
+      font-size: calc(#{$pfont-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$pfont-diff});
+    }
+  // Desktop
+    @media (min-width: 1201px) {
+      font-size: $pfont-max;
+    }
+  }
+
+
+
